@@ -1,11 +1,15 @@
 window.addEventListener('load', function() {
-  var ripples = document.getElementsByClassName('that-ripples')
+  function potato() {
+    var ripples = document.getElementsByClassName('that-ripples')
 
-  for(var i = 0; i < ripples.length; i++) {
-    var ripple = document.createElement('span')
-    ripple.className = 'ripple'
-    ripples[i].appendChild(ripple)
+    for(var i = 0; i < ripples.length; i++) {
+      var ripple = document.createElement('span')
+      ripple.className = 'ripple'
+      ripples[i].appendChild(ripple)
+    }
   }
+
+  potato()
 
   // ripplejs
   function startRipple(type, at) {
