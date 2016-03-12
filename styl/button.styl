@@ -1,4 +1,4 @@
-.button
+.button, .pill
 	@extend .text-button
 
 	color off-white
@@ -6,6 +6,13 @@
 	background-color rgba(black, 0.8)
 
 	colorOptions()
+
+	&.icon
+		font-weight normal
+		letter-spacing normal
+		text-transform none
+		font-size 24px
+		font-family 'Material Icons'
 
 	&.white
 		background-color rgba(white, 0.9)
@@ -22,6 +29,10 @@
 
 		&:hover
 			@extend .without-shadow
+
+	&.pill
+		padding 4px 1.5em
+		border-radius 1000000px
 
 	&.disabled
 		background-color rgba(#9E9E9E, 0.2)
@@ -63,13 +74,16 @@
 		right 0
 		bottom 0
 		border-radius 2px
-		background-color white
-		opacity 0
+		background-image linear-gradient(
+			transparent,
+			rgba(black, 0.05)
+		)
+		opacity 0.2
 		pointer-events none
 		transition opacity 0.2s ease-out
 
 	&:not(.that-ripples):active:after
-		opacity 0.2
+		opacity 0.4
 
 	&:hover
 		@extend .with-shadow
