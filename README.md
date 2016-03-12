@@ -1,2 +1,4 @@
-# Material Aero - A modern, front-end responsive framework based off of Material Design & Windows Aero
-Material Design + Aero = Awesome.
+# MaterialAero: Material Design + Windows Aero = AWESOME.
+## A front-end web framework for creating awesome sites.
+
+MaterialAero comes packaged with a modified version of [RippleJS](https://github.com/samthor/rippleJS).
