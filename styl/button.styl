@@ -28,7 +28,7 @@
 		background-color transparent
 
 		&:hover
-			@extend .without-shadow
+			@extend .with-inset-shadow
 
 	&.pill
 		padding 4px 1.5em
@@ -39,7 +39,7 @@
 		color #9E9E9E
 		cursor default
 		pointer-events none
-		@extend .without-shadow
+		@extend .with-inset-shadow
 
 	display inline-block
 	margin 1em 0.6em
@@ -79,14 +79,12 @@
 			rgba(black, 0.05)
 		)
 		opacity 0.2
+		background-color transparent
 		pointer-events none
-		transition opacity 0.2s ease-out
+		transition background-color 0.2s ease-out
 
 	&:not(.that-ripples):active:after
-		opacity 0.4
+		background-color white
 
 	&:hover
-		@extend .with-shadow
-
-		&:active
-			@extend .with-long-shadow
+		@extend .with-long-shadow
