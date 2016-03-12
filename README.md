@@ -1,5 +1,7 @@
 [![BlendCSS: A unique & expressive front-end web framework.](https://raw.githubusercontent.com/GrannyCookies/blend/gh-pages/examples/BlendCSS.png)](http://grannycookies.github.io/blend/examples/)
 
+[![Gitter](https://raw.githubusercontent.com/GrannyCookies/blend/gh-pages/examples/Gitter.png)](https://gitter.im/GrannyCookies/blend)
+
 BlendCSS blends the best parts of Material Design and Flat 2.0 to create a unique design language that really screams "You!" at the top of it's lungs.
 
 ![You!](https://raw.githubusercontent.com/GrannyCookies/blend/gh-pages/examples/You!.png)
