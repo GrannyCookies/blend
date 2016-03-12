@@ -1,7 +1,7 @@
 {
-  "name": "material-aero",
+  "name": "blend-css",
   "version": "0.0.1",
-  "description": "Material Design + Windows Aero = AWESOME.",
+  "description": "A blend of web design trends.",
   "main": "gulpfile.js",
   "directories": {
     "example": "examples"
