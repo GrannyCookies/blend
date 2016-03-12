@@ -72,6 +72,15 @@ off-white = rgba(white, 0.95)
 	max-width 40em
 	margin 8px 0
 
+	text-shadow 0 2px 1px rgba(0, 0, 0, 0.05)
+
+a:not(.button)
+	color rgba(#2196F3, 0.9)
+	text-decoration none
+
+	&:hover
+		border-bottom 1px solid rgba(#2196F3, 0.9)
+
 b
 	font-weight 500
 
@@ -128,9 +137,11 @@ colorOptions()
 		background-color rgba(#FFEB3B, 0.9)
 
 	&.amber
+		color off-white
 		background-color rgba(#FFC107, 0.9)
 
 	&.orange
+		color off-white
 		background-color rgba(#FF9800, 0.9)
 
 	&.deep-orange
@@ -209,5 +220,8 @@ textColorOptions()
 		color off-white
 		background-color rgba(black, 0.9)
 
-span, p, h1, h2, h3, h4, h5, h6, b
+span, p, h1, h2, h3, h4, h5, h6, b, .material-icons, a
 	textColorOptions()
+
+ul li
+	colorOptions()

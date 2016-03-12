@@ -1,5 +1,8 @@
 /* https://github.com/samthor/rippleJS */
 
+.that-ripples
+  position relative
+
 /**
  * contains a ripple. Will normally grow to fixed size (200px/200px), not
  * related to the holder itself.
@@ -13,6 +16,7 @@
   bottom: 0;
   overflow: hidden;
   border-radius: inherit;
+  z-index 0
 
   /** Forces webkit to properly contain content within border-radius. */
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);

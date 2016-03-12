@@ -17,4 +17,4 @@ Expressive classnames are an integral component, meaning that your  source code 
 Go and [check out BlendCSS](http://grannycookies.github.io/blend/examples/), now!
 
 #####By the way...
-BlendCSS comes packaged with a modified version of the awesome  [RippleJS](https://github.com/samthor/rippleJS) by Sam Thorogood.
+BlendCSS comes packaged with a modified version of the awesome  [RippleJS](https://github.com/samthor/rippleJS) by Sam Thorogood. Go check it out!

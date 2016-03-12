@@ -1,3 +1,7 @@
+@css {
+	@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic|Material+Icons');
+}
+
 .on-the-right
 	float right
 
@@ -11,6 +15,7 @@
 @import 'button'
 @import 'card'
 @import 'nav'
+@import 'list'
 
 body
 	margin 0
@@ -27,3 +32,13 @@ html
 
 main
 	margin-bottom 6em
+
+.without-margin
+	margin 0 !important
+
+.align-to-center
+	text-align center !important
+
+::selection
+	color white
+	background-color rgba(black, 20%)
