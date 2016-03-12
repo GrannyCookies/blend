@@ -4,57 +4,7 @@
 	color off-white
 	background-color rgba(black, 0.8)
 
-	&.red
-		background-color rgba(#F44336, 0.9)
-
-	&.pink
-		background-color rgba(#E91E63, 0.9)
-
-	&.purple
-		background-color rgba(#9C27B0, 0.9)
-
-	&.deep-purple
-		background-color rgba(#673AB7, 0.9)
-
-	&.indigo
-		background-color rgba(#3F51B5, 0.9)
-
-	&.blue
-		background-color rgba(#2196F3, 0.9)
-
-	&.light-blue
-		background-color rgba(#03A9F4, 0.9)
-
-	&.cyan
-		background-color rgba(#00BCD4, 0.9)
-
-	&.teal
-		background-color rgba(#009688, 0.9)
-
-	&.green
-		background-color rgba(#4CAF50, 0.9)
-
-	&.light-green
-	&.yellow
-		background-color rgba(#FFEB3B, 0.9)
-
-	&.amber
-		background-color rgba(#FFC107, 0.9)
-
-	&.orange
-		background-color rgba(#FF9800, 0.9)
-
-	&.deep-orange
-		background-color rgba(#FF5722, 0.9)
-
-	&.brown
-		background-color rgba(#795548, 0.9)
-
-	&.grey
-		background-color rgba(#9E9E9E, 0.9)
-
-	&.blue-grey
-		background-color rgba(#607D8B, 0.9)
+	colorOptions()
 
 	&.white
 		background-color rgba(white, 0.9)
@@ -64,19 +14,19 @@
 			background-color black
 
 	&.flat
-		@extend .depth-0
+		@extend .without-shadow
 		color inherit
 		background-color transparent
 
 		&:hover
-			@extend .depth-0
+			@extend .without-shadow
 
 	&.disabled
 		background-color rgba(#9E9E9E, 0.2)
 		color #9E9E9E
 		cursor default
 		pointer-events none
-		@extend .depth-0
+		@extend .without-shadow
 
 	display inline-block
 	margin 1em 0.6em
@@ -87,7 +37,7 @@
 	user-select none
 	position relative
 
-	@extend .depth-1
+	@extend .with-shadow
 	transition box-shadow 0.2s ease-out
 
 	&.circular
@@ -118,7 +68,7 @@
 		opacity 0.2
 
 	&:hover
-		@extend .depth-2
+		@extend .with-shadow
 
 		&:active
-			@extend .depth-0
+			@extend .with-long-shadow

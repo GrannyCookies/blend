@@ -1,5 +1,17 @@
 nav
 	colorOptions()
-	@extend .depth-1
+	@extend .with-shadow
 
+	width 100%
+	display block
 	height 64px
+	user-select none
+	cursor default
+
+	&.floating
+		position fixed
+		top 0
+		left 0
+
+main
+	margin-top 64px
