@@ -2,100 +2,59 @@
 <html>
 
 <head>
-	<title>MaterialAero</title>
+	<title>BlendCSS</title>
 
-	<link rel='stylesheet' href='../dist/materialareo.css'>
-	<script src='../dist/materialareo.js'></script>
+	<link rel='stylesheet' href='../dist/blend.css'>
+	<script src='../dist/blend.js'></script>
 
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic'>
 </head>
 
-<body class='container'>
-	<h1>Huge</h1>
-	<h2>Massive</h2>
-	<h3>Very Big</h3>
-	<h4>Big</h4>
-	<h5>Heading</h5>
-	<h6>Subheading</h6>
-	<p>Regular</p>
+<body>
+	<nav class='purple'>
+		<div class='container'>
+			<h3 class='on-the-left'>BlendCSS</h3>
 
-	<a class='button'>
-		Button
-		<span class='ripple'></span>
-	</a>
-
-	<a class='red button'>
-		Button
-		<span class='ripple'></span>
-	</a>
-
-	<a class='orange button'>
-		Button
-		<span class='ripple'></span>
-	</a>
-
-	<a class='blue button'>
-		Button
-		<span class='ripple'></span>
-	</a>
-
-	<a class='green button'>
-		Button
-		<span class='ripple'></span>
-	</a>
-
-	<a class='pink button'>
-		Button
-		<span class='ripple'></span>
-	</a>
-
-	<a class='disabled button'>
-		Button
-		<span class='ripple'></span>
-	</a>
-
-	<a class='flat button'>
-		Button
-		<span class='ripple'></span>
-	</a>
-
-	<div class='red hoverable card'>
-		<h5>Hello!</h5>
-
-		<p>
-			I am a red, hoverable card.
-		</p>
-
-		<div class='card'>
-			<p>
-				I am but a simple, white card.
-			</p>
-
-			<div class='blue card'>
-				<p>
-					Right. This is getting ridiculous.
-				</p>
-
-				<a class='flat button'>
-					Click me!
-					<span class='ripple'></span>
-				</a>
-
-				<a class='flat button'>
-					No, me!
-					<span class='ripple'></span>
-				</a>
-
-				<a class='indigo circular button'>
-					Meee!
-					<span class='ripple'></span>
-				</a>
-
-				<h2>We need to add some areo-like features nao.</h2>
-				<h1>What next?</h1>
+			<div class='on-the-right'>
+				<a class='flat button that-ripples'>secondary</a>
+				<a class='pink button that-ripples'>primary</a>
 			</div>
 		</div>
-	</div>
+	</nav>
+
+	<main>
+		<h1>Huge</h1>
+		<h2>Massive</h2>
+		<h3>Very Big</h3>
+		<h4>Big</h4>
+		<h5>Heading</h5>
+		<h6>Subheading</h6>
+		<p>Regular</p>
+
+		<a class='button that-ripples'>Button that ripples</a>
+
+		<a class='red button that-ripples'>red Button that ripples</a>
+
+		<a class='orange button that-ripples'>orange button that ripples</a>
+
+		<a class='blue button'>blue button</a>
+
+		<a class='green button'>green button</a>
+
+		<a class='disabled button'>Disabled Button</a>
+
+		<a class='flat button that-ripples'>Flat Button that ripples</a>
+
+		<a class='pink circular button'>circle</a>
+
+		<div class='red hoverable card'>
+			<h5>Hello!</h5>
+
+			<p>
+				I am a red, hoverable card.
+			</p>
+		</div>
+	</main>
 </body>
 
 </html>

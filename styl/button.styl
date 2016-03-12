@@ -114,8 +114,11 @@
 		pointer-events none
 		transition opacity 0.2s ease-out
 
-	&:hover:after
+	&:not(.that-ripples):active:after
 		opacity 0.2
 
-	&:active
+	&:hover
 		@extend .depth-2
+
+		&:active
+			@extend .depth-0

@@ -9,7 +9,7 @@ const uglify = require('gulp-uglifyjs')
 gulp.task('default', ['js', 'css'])
 
 gulp.task('css', function() {
-	gulp.src('styl/materialareo.styl')
+	gulp.src('styl/blend.styl')
 	.pipe(sourcemaps.init())
 	.pipe(stylus({
 		compress: true,
@@ -25,7 +25,7 @@ gulp.task('css', function() {
 
 gulp.task('js', function() {
 	gulp.src('js/**/*.js')
-	.pipe(uglify('materialareo.js'), {
+	.pipe(uglify('blend.js'), {
 		outSourceMap: true,
 	})
 	.pipe(gulp.dest('dist'))

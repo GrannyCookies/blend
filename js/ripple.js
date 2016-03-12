@@ -1,28 +1,13 @@
 window.addEventListener('load', function() {
-  function applyStyle(css) {
-    var style = document.createElement('style');
-    style.type = 'text/css';
-    if (style.styleSheet) {
-      style.styleSheet.cssText = css;
-    } else {
-      style.appendChild(document.createTextNode(css));
-    }
-    document.body.appendChild(style);
-  }
-  function hasCSS() {
-    var test = document.createElement('div');
-    test.className = 'ripple';
-    document.body.appendChild(test);
-    var s = window.getComputedStyle(test);
-    var result = s.position == 'absolute';
-    document.body.removeChild(test);
-    return result;
-  }
-  if (!hasCSS()) {
-    var css = '/*rippleJS*/.ripple,.ripple.fill::after{position:absolute;top:0;left:0;right:0;bottom:0}.ripple{display:block;overflow:hidden;border-radius:inherit;-webkit-mask-image:-webkit-radial-gradient(circle,#fff,#000)}.ripple.fill::after{content:""}.ripple.fill{border-radius:1000000px}.ripple .rippler{position:absolute;border-radius:100%;background:currentColor;opacity:.2;width:0;height:0;-webkit-transition:-webkit-transform .4s ease-out,opacity .4s ease-out;transition:transform .4s ease-out,opacity .4s ease-out;-webkit-transform:scale(0);transform:scale(0);pointer-events:none;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ripple .rippler.held{opacity:.4;-webkit-transform:scale(1);transform:scale(1)}.ripple .rippler.done{opacity:0}';
-    applyStyle(css);
+  var ripples = document.getElementsByClassName('that-ripples')
+
+  for(var i = 0; i < ripples.length; i++) {
+    var ripple = document.createElement('span')
+    ripple.className = 'ripple'
+    ripples[i].appendChild(ripple)
   }
 
+  // ripplejs
   function startRipple(type, at) {
     var holder = at.target;
     var cl = holder.classList;
