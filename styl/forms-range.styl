@@ -1,0 +1,63 @@
+input[type=range]
+	user-select none
+	cursor pointer
+
+	colorOptions()
+
+	position relative
+	background-color white
+	border none
+	outline none
+	width 100%
+	margin 16px 0
+	border-radius 4px
+	height 4px
+	padding 0
+	appearance none
+
+	&:focus
+		outline none
+
+	&::-webkit-slider-runnable-track
+		height 0
+		border none
+		appearance none
+
+	&::-moz-range-track
+		height 0
+		border none
+		appearance none
+
+	&::-webkit-slider-thumb
+		appearance none
+		border none
+		height 18px
+		width 18px
+		border-radius 10000px
+		margin-top -9px
+		transition 200ms ease-out
+		background-color white
+
+		@extend .with-long-shadow
+
+		&:hover, &:focus, &:active
+			height 24px
+			width 24px
+			margin-top -12px
+
+	&::-moz-range-thumb
+		appearance none
+		border none
+		height 18px
+		width 18px
+		border-radius 10000px
+		margin-top -9px
+		transition 200ms ease-out
+		background-color white
+
+		@extend .with-long-shadow
+
+		&:hover, &:focus, &:active
+			height 24px
+			width 24px
+			margin-top -12px
