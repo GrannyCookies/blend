@@ -32,6 +32,7 @@
     "poststylus": "~0.2.3",
     "gulp-sourcemaps": "~1.6.0",
     "autoprefixer": "~6.3.3",
-    "gulp-uglifyjs": "~0.6.2"
+    "gulp-uglifyjs": "~0.6.2",
+    "rucksack-css": "~0.8.5"
   }
 }

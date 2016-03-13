@@ -15,7 +15,8 @@ gulp.task('css', function() {
 		compress: true,
 		use: [
 			poststylus([
-				'autoprefixer'
+				'autoprefixer',
+				'rucksack-css'
 			])
 		]
 	}))
